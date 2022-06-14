@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+<h1 align="center">
+  <br>
+  <a href="https://blizy-bodybuilding.netlify.app/"><img src="https://i.imgur.com/64hlryU.png" alt="blizy gym" width="200"></a>
+  <br>
+  DonBlizy Bodybuilding
+  <br>
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h4 align="center">A gym exercises app built using <a href="https://reactjs.org/" target="_blank">React.js</a> and <a href="https://mui.com/">Material UI. </a></h4>
 
-## Available Scripts
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> 
+</p>
 
-In the project directory, you can run:
+![screenshot](https://media.giphy.com/media/Wt4qCVlb4be9kxSkqN/giphy.gif)
 
-### `npm start`
+## Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project was created as practice for MUI. It is not meant to be used for production and is a work in progress.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A user can:
 
-### `npm test`
+- Search for exercises based on muscle group, equipment, various keywords (ie Deadlift).
+- View suggested youtube videos based on a chosen exercise.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The app is using 2 different APIs to fetch <a href="https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb"> exercise data </a> and <a href="https://rapidapi.com/h0p3rwe/api/youtube-search-and-download">youtube videos </a> respectively.
 
-### `npm run build`
+## How To Use
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer.
+From your command line:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+# Clone this repository
+$ git clone https://github.com/donblizy/gym_exercises.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Go into the repository
+$ cd blizy-bodybuilding
+# Install dependencies
+$ npm install
 
-### `npm run eject`
+# Run the app
+$ npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You will also need to subscribe (free) to the 2 APIs linked above and get your own key and add it to the 2 fields in src/utils/fetchData.js either by hard pasting it or through an environment variable (.env) .
